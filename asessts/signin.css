@@ -1,0 +1,181 @@
+
+body {
+    background-image: url(./images/sign\ in\ trio.svg);
+    margin: 0;
+    padding: 0 0 200px 0;
+    min-height: 100vh;
+    font-family: "Poppins", serif;
+}
+.logo
+{
+    margin: 20px;
+    
+}
+input {
+    outline: none;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    margin-top: 116px;
+}
+
+.hi, span {
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+}
+
+span {
+    color: rgba(105, 192, 250, 1);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.gray {
+    color: rgba(161, 161, 161, 1);
+}
+
+.or {
+    text-align: center;
+    margin: 22px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(5, 146, 239, 1);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.data input, .data button  {
+    background-color: rgba(240, 245, 250, 1);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 529px;
+    height: 55px;
+    padding: 15px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px 18px 0px;
+    flex-wrap: wrap;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    accent-color: blue;
+}
+
+.data button , .signup button{
+    background-color: rgba(36, 164, 248, 1);
+    font-size: 20px;
+    color: white;
+    max-width: 529px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.down button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    max-width: 529px;
+    background-color: white;
+    border-radius: 18px;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid rgba(231, 231, 231, 1);
+}
+
+button img {
+    width: 32px;
+    height: 32px;
+}
+
+.down a {
+    color: inherit;
+}
+
+input::placeholder {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .data input, .data button {
+        max-width: 100%;
+    }
+
+    .middle {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .down button {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .hi {
+        font-size: 28px;
+    }
+
+    .data {
+        font-size: 16px;
+    }
+
+    .data input, .data button {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .down button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

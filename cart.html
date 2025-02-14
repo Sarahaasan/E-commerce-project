@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- <div class="all">
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/Frame 1984078167.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <select id="categories">
+                <option value="cat1">Category 1</option>
+                <option value="cat2">Category 2</option>
+                <option value="cat3">Category 3</option>
+                <option value="cat4">Category 4</option>
+            </select>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="active">Contact Us</a></li>
+        </ul>
+        <div class="icons-container">
+            <span class="lang">Arabic</span>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-user dropdown-icon"></i>
+            <i class="fa-regular fa-calendar shopping-icon">
+                <span class="badge">3</span>
+            </i>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+
+    </nav>
+
+    <div class="search-container">
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <select class="location">
+                <option>Egypt</option>
+                <option>Alexandria</option>
+                <option>Luxor</option>
+                <option>Aswan</option>
+            </select>
+        </div>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for what you need">
+        </div>
+        <button class="search-btn">Search</button>
+    </div>
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+    <span class="cart-text"><i class="fas fa-shopping-bag"></i> Cart</span>
+    </nav>
+    
+   
+
+    <div class="progress-container">
+        <div class="step-active">
+            <div class="circle">1</div>
+            <p>cart</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">2</div>
+            <p>Check out</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            <p>Payment</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="all2">
+    <div class="cart-container">
+        <div class="cart-item category-clothing">
+            <img src="images/products.png" alt="Jacket">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">2</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+    
+        <div class="cart-item category-shoes">
+            <img src="images/products (2).png" alt="Shoes">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">2</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+    
+        <div class="cart-item category-accessories">
+            <img src="images/pngwing.com (57) 1.png" alt="Headphones">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">2</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+        <div class="cart-item category-shoes">
+            <img src="images/pngwing.com (51) 1.png" alt="Shoes">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">2</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+    </div>
+    </div>
+
+
+
+     <div class="shopping-container">
+        <div class="cart-containerr">
+            
+        </div>
+    
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <img src="images/pana.png" alt="Checkout">
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Shipping: <span id="shipping">$7.24</span></p>
+            <hr>
+            <p>Total: <strong id="total">$7.24</strong></p>
+            <button class="checkout-btn">Check out</button>
+        </div>
+    </div> -->
+
+  
+
+
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/Frame 1984078167.png" alt="">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <select id="categories">
+                <option value="cat1">Category 1</option>
+                <option value="cat2">Category 2</option>
+                <option value="cat3">Category 3</option>
+                <option value="cat4">Category 4</option>
+            </select>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <div class="icons-container">
+            <span class="lang">Arabic</span>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-user dropdown-icon"></i>
+            <i class="fa-regular fa-calendar shopping-icon">
+                <span class="badge">3</span>
+            </i>
+            <i class="fa-regular fa-bell"></i>
+        </div>
+
+    </nav>
+
+    <div class="search-container">
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <select class="location">
+                <option>Egypt</option>
+                <option>Alexandria</option>
+                <option>Luxor</option>
+                <option>Aswan</option>
+            </select>
+        </div>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for what you need">
+        </div>
+        <button class="search-btn">Search</button>
+    </div>
+    <nav class="breadcrumb">
+        <a href="home.html" class="home">Home</a>
+        <span class="separator"> &gt; </span>
+        <a href="cart.html" class="cart">
+            <i class="fas fa-shopping-bag"></i> Cart
+        </a>
+    </nav>
+
+
+
+    <div class="progress-container">
+        <div class="step-active">
+            <div class="circle">1</div>
+            <p>cart</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">2</div>
+            <p>Check out</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            <p>Payment</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="images/products.png" alt="Jacket">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="images/products (2).png" alt="Shoes">
+            <h3>Curology Product Set</h3>
+            <p>Little man</p>
+            <span class="price">$118.99</span>
+            <div class="size-selector">
+                <label>Size:</label>
+                <select>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="remove-item">🗑️</button>
+        </div>
+
+<div class="cart-item">
+    <img src="images/pngwing.com (57) 1.png" alt="Headphones">
+    <h3>Curology Product Set</h3>
+    <p>Little man</p>
+    <span class="price">$118.99</span>
+    <div class="size-selector">
+        <label>Size:</label>
+        <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+    </div>
+    <div class="quantity-control">
+        <button class="decrease">-</button>
+        <span class="quantity">1</span>
+        <button class="increase">+</button>
+    </div>
+    <button class="remove-item">🗑️</button>
+</div>
+
+
+<div class="cart-item">
+    <img src="images/pngwing.com (51) 1.png" alt="shoes">
+    <h3>Curology Product Set</h3>
+    <p>Little man</p>
+    <span class="price">$118.99</span>
+    <div class="size-selector">
+        <label>Size:</label>
+        <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+    </div>
+    <div class="quantity-control">
+        <button class="decrease">-</button>
+        <span class="quantity">1</span>
+        <button class="increase">+</button>
+    </div>
+    <button class="remove-item">🗑️</button>
+</div>
+
+
+
+    </div>
+
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <img src="images/pana.png" alt="Checkout">
+        <div class="summary-details">
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Shipping: <span id="shipping">$7.24</span></p>
+            <hr>
+            <p>Total: <strong id="total">$0.00</strong></p>
+        </div>
+        <button class="checkout-btn">Check out</button>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <div class="logo"><img src="images/oie_transparent (1).png" alt=""></div>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h4>Customer Services</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div>
+                <h4>Profile</h4>
+                <a href="#">My account</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Account settings</a>
+            </div>
+
+            <div class="contact-us">
+                <h4>Contact us</h4>
+                <p>Phone: 305-555-0123</p>
+                <p>Email: contactstore@fakemail.com</p>
+                <p>Address: 789 Elm St. Orlando, FL 328</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <p>Terms of Use &nbsp; &nbsp; Privacy Policy &nbsp; &nbsp; © 2024 Shopréme, All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+    <script src="JS/cart.js"></script>
+</body>
+</html>
