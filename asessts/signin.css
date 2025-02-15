@@ -133,16 +133,7 @@ input::placeholder {
     font-size: 16px;
     margin-left: 10px;
 }
-.signup button
-{
-    background-color: rgba(36, 164, 248, 1);
-    font-size: 20px;
-    color: white;
-    width: 529px;
-    color: white;
-    border-radius: 10px;
-    border: none;
-}
+
 
 
 @media screen and (max-width: 768px) {
