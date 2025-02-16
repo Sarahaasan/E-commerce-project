@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduation-Project-GDG</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body style="background-image: url('images/sign\ in\ trio.png'); ">
+    <div class="already_found" style="max-width: 90%; font-size: large;">
+        <p id="found"></p>
+        </div>
 <div class="container">
     <div class="logo"><img src="images/Frame 1984078167.png" alt=""></div>
     <h2>Hi, Welcome to <span class="highlight">Shopréme!</span></h2>
     <p>Sign up to your account</p>
     <form class="form-container">
+        
         <div class="all">
         <div class="column">
         <div class="input-group">
             <label>First Name</label>
             <i class="fa-regular fa-user"></i>
-            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="First Name" id="firstname">
         </div>
         <div class="input-group">
             <i class="fa-regular fa-envelope"></i>
             <label>E-mail Address</label>
-            <input type="email" placeholder="email@email.com">
+            <input type="email" placeholder="email@email.com" id="email">
         </div>
         <div class="input-group">
             <i class="fa-solid fa-lock"></i>
             <label>Password</label>
-            <input type="password" placeholder="********">
+            <input type="password" placeholder="********" id="password">
         </div>
         </div>
         <div class="column">
         <div class="input-group">
             <i class="fa-regular fa-user"></i>
             <label> Surname</label>
-            <input type="text" placeholder="Surname">
+            <input type="text" placeholder="Surname" id="lastname">
         </div>
       
         <div class="input-group">
             <i class="fa-regular fa-user"></i>
             <label>Gender</label>
-            <select>
+            <select id="gender">
                 <option>Female</option>
                 <option>Male</option>
             </select>
@@ -51,34 +56,24 @@
         <div class="input-group">
     <i class="fa-solid fa-lock"></i>
             <label>Confirm Password</label>
-            <input type="password" placeholder="********">
+            <input type="password" placeholder="********" id="confirmpassword">
         </div>
         </div>
         </div>
+        <button class="button signup" onclick="signUp()" id="signup">✅ Sign Up</button>
     </form>
-    <button type="submit" class="signup-btn">Sign Up</button>
     <!-- </form> -->
     <div class="divider-container">
         <hr class="divider">
         <span class="divider-text">Or Sign Up With</span>
-    </div>
-    <div class="social-buttons">
-        <button class="google-btn"><i class="fa-brands fa-google" style="color: #ed1d3c;"></i>Continue with Google</button>
-        <button class="facebook-btn"><i class="fab fa-facebook"  style="color: blue"></i> Continue with Facebook</button>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
+    </div> 
+        <button class="button google" onclick="loginWithGoogle()"> <i class="fa-brands fa-google" style="color: #ed1d3c;"></i>Continue with Google</button>
+        <button class="button facebook" onclick="loginWithFacebook()"><i class="fab fa-facebook" style="color: blue"></i> Continue with Facebook</button>
+       </div>
+<!-- </div> -->
 
 
     <script src="javascript/main.js"></script>
+    <script src="./javascript/register.js"></script>
 </body>
 </html>
